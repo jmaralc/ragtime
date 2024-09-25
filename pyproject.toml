@@ -1,0 +1,43 @@
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+select = ["E", "F", "I", "UP"]
+ignore = ["D203"]
+show-source = true
+
+[tool.ruff.lint.isort]
+known-local-folder = ["examples"]
+
+[tool.black]
+line-length = 120
+target-version = ["py311"]
+
+[tool.poetry]
+name = "ragtime"
+version = "0.1.0"
+description = ""
+authors = ["Javier Martinez Alcantara <jmaralc@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+psycopg2 = "^2.9.9"
+SQLAlchemy = "^2.0.35"
+pgvector = "^0.3.3"
+asyncpg = "^0.29.0"
+sqlmodel = "^0.0.22"
+python-dotenv = "^1.0.1"
+numpy = "^2.1.1"
+ollama = "^0.3.3"
+openai = "^1.47.0"
+beautifulsoup4 = "^4.12.3"
+requests = "^2.32.3"
+rich = "^13.8.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

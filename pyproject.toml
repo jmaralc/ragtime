@@ -20,7 +20,7 @@ authors = ["Javier Martinez Alcantara <jmaralc@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.11"
 psycopg2 = "^2.9.9"
 SQLAlchemy = "^2.0.35"
 pgvector = "^0.3.3"
